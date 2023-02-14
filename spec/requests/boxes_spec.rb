@@ -40,7 +40,27 @@ RSpec.describe "Boxes", type: :request do
 
       box = Box.first
       expect(box.name).to eq('Dom Travis')
+    end    
+  end
+
+  describe "DELETE /destroy" do
+    it 'gets rid of a box' do
+
+      user = User.where(email: 'test@example.com').first_or_create(password: '12345678', password_confirmation: '12345678')
+  
+      box = Box.new(
+          name: 'James Quillen',
+          contents: 'toothbrush and underwear',
+          size: 'small',
+          user_id: user.id
+        )
+        box.save!
+
+      delete "/boxes/#{box.id}"
+
+      expect(response).to have_http_status(200)
+      expect(Box.all.length).to eq(0)
+
     end
   end
 end
-

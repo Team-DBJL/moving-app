@@ -1,5 +1,6 @@
 import React from "react"
-import { Navbar, Nav, NavItem, NavLink } from "reactstrap"
+import { Navbar, Nav, NavItem } from "reactstrap"
+import { NavLink } from "react-router-dom"
 
 const Header = ({
     logged_in,
@@ -13,38 +14,38 @@ const Header = ({
         <Navbar>
             <Nav>
                 <NavItem>
-                    <NavLink href="/">
+                    <NavLink to="/">
                         Home
                     </NavLink>
                 </NavItem>
 
                 <NavItem>
-                    <NavLink href="/About">
+                    <NavLink to="/about">
                         About 
                     </NavLink>
                 </NavItem>
 
                 {!logged_in && (
                 <NavItem>
-                    <NavLink href={new_user_route}>
+                    <a href={new_user_route}>
                         Sign Up 
-                    </NavLink>
+                    </a>
                 </NavItem>
                  )}
 
                 {!logged_in && (
                 <NavItem>
-                    <NavLink href={sign_in_route}>
+                    <a href={sign_in_route}>
                         Login 
-                    </NavLink>
+                    </a>
                 </NavItem>
                 )}
                
                 {logged_in && (
                 <NavItem>
-                    <NavLink href={sign_out_route}>
+                    <a href={sign_out_route}>
                         LogOut 
-                    </NavLink>
+                    </a>
                 </NavItem>
                 )}
 

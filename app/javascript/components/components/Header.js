@@ -19,7 +19,7 @@ const Header = ({
                 </NavItem>
 
                 <NavItem>
-                    <NavLink href="/About">
+                    <NavLink href="/about">
                         About 
                     </NavLink>
                 </NavItem>

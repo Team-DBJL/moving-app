@@ -4,8 +4,14 @@ import "@testing-library/jest-dom"
 import Header from "./Header"
 import { BrowserRouter } from "react-router-dom"
 
-describe ("<Header />"), () => {
-    it("renders without crashing"),() => {
-        const 
-    }
-}
+describe ("<Header />", () => {
+    it("renders without crashing",() => {
+        const div = document.createElement("div")
+        render(
+            <BrowserRouter>
+                <Header />
+            </BrowserRouter>,
+            div
+        )
+    })
+})

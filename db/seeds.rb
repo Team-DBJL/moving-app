@@ -1,7 +1,34 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+user = User.where(email: "test@example.com").first_or_create(password: "password", password_confirmation: "password")
+
+box_seeds = [
+    {
+        name: "Kitchen",
+        contents: "utensils, kitchen towels, plates, bowls",
+        size: "large"
+    },
+    {
+        name: "Bedroom",
+        contents: "pillow, sheets, comforter",
+        size: "extra large" 
+    },
+    {
+        name: "Bathroom",
+        contents: "towels, soap, shampoo, shower curtain, floor mats",
+        size: "medium"
+    },
+    {
+        name: "Living Room",
+        contents: "books, sofa pillows, knick knacks",
+        size: "medium"
+    },
+    {
+        name: "Bedroom 2",
+        contents: "pillow, sheets, comforter",
+        size: "large"
+    }
+]
+
+box_seeds.each do |box|
+  user.boxes.create(box)
+  p "creating: #{box}"
+end

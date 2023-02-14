@@ -7,9 +7,9 @@ RSpec.describe "Boxes", type: :request do
       user = User.where(email: 'test@example.com').first_or_create(password: '12345678', password_confirmation: '12345678')
 
       user.boxes.create(
-        name: "James Quillen",
-        contents: "toothbrush and underwear",
-        size: "small",
+        name: 'James Quillen',
+        contents: 'toothbrush and underwear',
+        size: 'small',
         user_id: 1,
       )
 
@@ -18,7 +18,29 @@ RSpec.describe "Boxes", type: :request do
       box = JSON.parse(response.body)
       expect(response).to have_http_status(200)
       expect(box.length).to eq(1)
-      
+
+    end
+  end
+
+  describe "POST /create" do
+    it 'creates a new box' do
+
+      user = User.where(email: 'test@example.com').first_or_create(password: '12345678', password_confirmation: '12345678')
+
+      box_params = {
+        box: {
+            name: 'Dom Travis',
+            contents: 'Dumbells',
+            size: 'Medium',
+            user_id: user.id,
+        }
+      }
+      post '/boxes', params: box_params
+      expect(response).to have_http_status(200)
+
+      box = Box.first
+      expect(box.name).to eq('Dom Travis')
     end
   end
 end
+

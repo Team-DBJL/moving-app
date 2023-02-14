@@ -11,6 +11,14 @@ class BoxesController < ApplicationController
             render json: box.errors, status: 422
         end
     end
+    def destroy
+        box = Box.find(params[:id])
+        if box.destroy
+            render json: box
+        else
+            render json: box.errors
+        end
+    end
 
     private
     def box_params

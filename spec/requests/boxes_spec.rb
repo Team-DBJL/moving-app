@@ -73,10 +73,20 @@ RSpec.describe "Boxes", type: :request do
         name: 'Bora Ros',
         contents: 'laptop and games',
         size: 'medium',
-        user_id: 2,
+        user_id: user.id,
       )
-      box.update(:size => "small")
-      expect(box.size).to eq("small")
+
+      box_params = {
+          name: 'Lea Hazel',
+          contents: 'art supplies',
+          size: 'extra small',
+          user_id: user.id,
+      }
+      
+      box.update(box_params)
+      expect(box.name).to eq("Lea Hazel")
+      expect(box.contents).to eq("art supplies")
+      expect(box.size).to eq("extra small")
 
     end
   end

@@ -69,25 +69,32 @@ RSpec.describe "Boxes", type: :request do
 
       user = User.where(email: 'test@example.com').first_or_create(password: '12345678', password_confirmation: '12345678')
 
-      box = Box.create(
-        name: 'Bora Ros',
-        contents: 'laptop and games',
-        size: 'medium',
-        user_id: user.id,
-      )
-
       box_params = {
+        box: {
+          name: 'Bora Ros',
+          contents: 'laptop and games',
+          size: 'medium',
+          user_id: user.id,
+        }
+      }
+      
+      post "/boxes", params: box_params
+      box = Box.first
+
+      new_box_params = {
+        box: {
           name: 'Lea Hazel',
           contents: 'art supplies',
           size: 'extra small',
           user_id: user.id,
+        }
       }
       
-      box.update(box_params)
-      expect(box.name).to eq("Lea Hazel")
-      expect(box.contents).to eq("art supplies")
-      expect(box.size).to eq("extra small")
-
+      patch "/boxes/#{box.id}", params: new_box_params
+      expect(response).to have_http_status(200)
+      answer = JSON.parse(response.body)
+      expect(answer['name']).to eq("Lea Hazel")
+     
     end
   end
 end

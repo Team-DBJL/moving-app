@@ -20,7 +20,7 @@ class BoxesController < ApplicationController
         end
     end
     def update
-        box = box.find(params[:id])
+        box = Box.find(params[:id])
         box.update(box_params)
         if box.valid?
             render json: box

@@ -63,4 +63,38 @@ RSpec.describe "Boxes", type: :request do
 
     end
   end
+
+  describe "PATCH /update" do
+    it 'edits information about a box' do
+
+      user = User.where(email: 'test@example.com').first_or_create(password: '12345678', password_confirmation: '12345678')
+
+      box_params = {
+        box: {
+          name: 'Bora Ros',
+          contents: 'laptop and games',
+          size: 'medium',
+          user_id: user.id,
+        }
+      }
+      
+      post "/boxes", params: box_params
+      box = Box.first
+
+      new_box_params = {
+        box: {
+          name: 'Lea Hazel',
+          contents: 'art supplies',
+          size: 'extra small',
+          user_id: user.id,
+        }
+      }
+      
+      patch "/boxes/#{box.id}", params: new_box_params
+      expect(response).to have_http_status(200)
+      answer = JSON.parse(response.body)
+      expect(answer['name']).to eq("Lea Hazel")
+     
+    end
+  end
 end

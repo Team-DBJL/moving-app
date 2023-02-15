@@ -63,4 +63,21 @@ RSpec.describe "Boxes", type: :request do
 
     end
   end
+
+  describe "PATCH /update" do
+    it 'edits information about a box' do
+
+      user = User.where(email: 'test@example.com').first_or_create(password: '12345678', password_confirmation: '12345678')
+
+      box = Box.create(
+        name: 'Bora Ros',
+        contents: 'laptop and games',
+        size: 'medium',
+        user_id: 2,
+      )
+      box.update(:size => "small")
+      expect(box.size).to eq("small")
+
+    end
+  end
 end

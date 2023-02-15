@@ -19,6 +19,16 @@ class BoxesController < ApplicationController
             render json: box.errors
         end
     end
+    def update
+        box = box.find(params[:id])
+        box.update(box_params)
+        if box.valid?
+            render json: box
+        else
+            render json: box.errors, status: 422
+        end
+    end
+
 
     private
     def box_params

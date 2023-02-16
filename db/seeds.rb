@@ -28,7 +28,7 @@ boxes = [
     }
 ]
 
-box_seeds.each do |box|
+boxes.each do |box|
   user.boxes.create(box)
   p "creating: #{box}"
 end

@@ -1,8 +1,10 @@
 class BoxesController < ApplicationController
+    
     def index
         boxes = Box.all
         render json: boxes
     end
+
     def create
         box = Box.create(box_params)
         if box.valid?
@@ -11,6 +13,7 @@ class BoxesController < ApplicationController
             render json: box.errors, status: 422
         end
     end
+
     def destroy
         box = Box.find(params[:id])
         if box.destroy
@@ -19,6 +22,7 @@ class BoxesController < ApplicationController
             render json: box.errors
         end
     end
+
     def update
         box = Box.find(params[:id])
         box.update(box_params)

@@ -6,5 +6,3 @@ Rails.application.routes.draw do
   root 'home#index'
 end
 
-# namespace :user do
-#   root :to => ""

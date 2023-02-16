@@ -44,7 +44,7 @@ const Header = ({
                 {logged_in && (
                 <NavItem>
                     <a href={sign_out_route}>
-                        LogOut 
+                        Log Out 
                     </a>
                 </NavItem>
                 )}

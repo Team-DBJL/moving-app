@@ -1,6 +1,6 @@
 user = User.where(email: "test@example.com").first_or_create(password: "password", password_confirmation: "password")
 
-box_seeds = [
+boxes = [
     {
         name: "Kitchen",
         contents: "utensils, kitchen towels, plates, bowls",

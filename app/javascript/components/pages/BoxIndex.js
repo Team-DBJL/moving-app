@@ -29,14 +29,11 @@ const BoxIndex = ({boxes, current_user}) => {
                             <CardText>
                                 {box.contents}
                             </CardText>
-                            <NavLink to="/boxedit"> 
+                            <NavLink to={`/boxshow/${box.id}`}> 
                                 <Button>
                                     Edit
                                 </Button>
                             </NavLink>
-                            <Button>
-                                Delete
-                            </Button>
                         </CardBody>
                     </Card>
             )

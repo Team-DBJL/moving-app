@@ -40,6 +40,14 @@ const Header = ({
                     </a>
                 </NavItem>
                 )}
+
+                {logged_in && (
+                <NavItem>
+                    <NavLink to="/boxindex">
+                        My Boxes
+                    </NavLink>
+                </NavItem>
+                )}
                
                 {logged_in && (
                 <NavItem>

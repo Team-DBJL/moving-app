@@ -1,1 +1,30 @@
 @import "bootstrap";
+
+.header-background {
+    background: url('https://media.istockphoto.com/id/578556350/photo/brown-paper-background.jpg?s=612x612&w=0&k=20&c=shGY1WoScBLeFqpV-NLmGJVjox9fuja7U6EdtvwQsk0=');
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;   
+}
+
+a:hover {
+    color: grey;
+}
+
+.footer-styling {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;   
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-fluid {
+    padding: 0 !important;
+    list-style: none;
+  }

@@ -1,1 +1,36 @@
 @import "bootstrap";
+
+.homepage {
+    color: white;
+}
+
+.motto {
+    font-size: 2rem;
+    text-align: center;
+    font-family: cursive;
+    padding-top: 12px;
+}
+
+.company-name {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.company-info {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.home-buttons-space {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+}
+
+.home-buttons {
+    background-color: white;
+    color: burlywood;
+}

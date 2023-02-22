@@ -24,7 +24,47 @@ a:hover {
     padding-bottom: 20px;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .container-fluid {
     padding: 0 !important;
     list-style: none;
   }
+
+  .not-found-container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .not-found-image {
+    flex-basis: 40%
+  }
+
+  .not-found-text {
+    font-size: 70px;
+    font-family: 'Ramabhadra'; @import url('https://fonts.googleapis.com/css?family=Ramabhadra');
+  }
+
+.not-found-text-2 {
+   font-size: 45px;
+    font-family: 'Ramabhadra'; @import url('https://fonts.googleapis.com/css?family=Ramabhadra');
+    justify-content: center;
+}
+.not-found-spacing {
+    text-align: center;
+}
+
+.btn-secondary {
+    background: white;
+    color: black;
+    border-radius: 2px;
+    font-size: 13px;
+    border-width: medium;
+    border-color: black;
+    margin-top:10px;
+    padding: 8px 20px;
+}

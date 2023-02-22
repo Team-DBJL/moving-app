@@ -3,11 +3,9 @@ import { Card, CardBody, CardTitle, CardText, Button, CardSubtitle } from "react
 import { NavLink } from "react-router-dom"
 
 const BoxIndex = ({boxes, current_user}) => {
-    console.log(boxes);
     const userBoxes = boxes?.find((box) => {
         return box.user_id === current_user.id
     })
-    console.log(userBoxes);
     return(
         <main>
             <h1>Your Boxes</h1>

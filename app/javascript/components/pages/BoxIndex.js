@@ -8,17 +8,23 @@ const BoxIndex = ({boxes, current_user}) => {
     })
     return(
         <main>
-            <h1>Your Boxes</h1>
+            <div>
+            <h1 className="your-box-styling">Your Boxes</h1>
                 <NavLink to="/boxnew">
-                    <Button>
-                        New Box
+                    <Button className="new-box-button" style={{float: "right"}}>
+                        Add New Box
                     </Button>
                 </NavLink>
+                </div>
+                <div className="index-bg-color">
             {boxes?.map((box, index) => {
                 return(
-                    <Card style={{width: '18rem'}} key={index}>
+                    <div  
+                    style={{display: "inline-block"}}>
+                    <Card md="4"
+                    className="card-styling" style={{width: '18rem'}} key={index}>
                         <CardBody>
-                            <CardSubtitle className="mb-2 text-muted" tag="h6">
+                            <CardSubtitle className="mb-2 box-label" tag="h6">
                                 {box.size}
                             </CardSubtitle>
                             <CardTitle tag="h5">
@@ -27,16 +33,25 @@ const BoxIndex = ({boxes, current_user}) => {
                             <CardText>
                                 {box.contents}
                             </CardText>
+                            <div style={{textAlign: "center", marginTop: "100px"}}>
                             <NavLink to={`/boxshow/${box.id}`}> 
-                                <Button>
+                                <Button className="edit-button">
                                     Edit
                                 </Button>
                             </NavLink>
+                            <NavLink to={`/boxshow/${box.id}`}> 
+                                <Button className="delete-button">
+                                    Delete
+                                </Button>
+                            </NavLink>
+                            </div>
                         </CardBody>
                     </Card>
+                    </div>
             )
         }
         )}
+        </div>
         </main>
     )
 }

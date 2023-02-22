@@ -68,3 +68,41 @@ a:hover {
     background-color: white;
     color: burlywood;
 }
+
+.about {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+.about-us-title {
+    font-family: 'Ramabhadra', sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Ramabhadra');
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.about-us-info {
+    font-family: 'Lato', sans-serif;
+}
+
+.card-title-text {
+    text-align: center;
+}
+
+.two-card-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.card {
+    width: 20rem;
+    border: 0;
+}
+
+.card-photo {
+    border-radius: 50%;
+}
+
+

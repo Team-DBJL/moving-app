@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+body {
+    height: 82vh;
+}
+
 .header-background {
     background: url('https://media.istockphoto.com/id/578556350/photo/brown-paper-background.jpg?s=612x612&w=0&k=20&c=shGY1WoScBLeFqpV-NLmGJVjox9fuja7U6EdtvwQsk0=');
 }
@@ -301,4 +305,10 @@ a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.homepage-background {
+    background-image: url('https://media.istockphoto.com/id/578556350/photo/brown-paper-background.jpg?s=612x612&w=0&k=20&c=shGY1WoScBLeFqpV-NLmGJVjox9fuja7U6EdtvwQsk0=');
+    height: 82vh;
+    background-size: cover;
 }

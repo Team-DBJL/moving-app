@@ -251,3 +251,31 @@ a:hover {
     font-family: 'Lato'; @import url('https://fonts.googleapis.com/css?family=Lato');
     font-weight: bolder;
 }
+=======
+.update-button-styling {
+    float: right;
+    border-radius: 2px;
+    margin-right: 25px;
+}
+
+.form-padding {
+    padding: 25px 30px;
+
+}
+
+.form-size {
+    height: 100px;
+    border-radius: 1px;
+    border-color: white;
+}
+
+.label-font {
+    font-size: 20px;
+}
+
+.show-page-border {
+    border: solid white;
+    border-radius: 1px;
+    background-color: white;
+}
+

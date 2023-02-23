@@ -33,15 +33,16 @@ const BoxEdit = ({boxes, updateBox, current_user}) => {
 
     return (
         <>
-            <h3>Edit Your Box</h3>
+            <h1 className="your-box-styling">Edit Your Box</h1>
+            <div className="index-bg-color form-padding about-us-info">
             <Form>
                 <Row>
-                    <Col md={5}>
+                    <Col md={3}>
                         <FormGroup>
-                            <Label for="name">
+                            <Label className="label-font" for="name">
                                 Name
                             </Label>
-                            <Input
+                            <Input style={{borderRadius: "1px",borderColor: "white"}}
                                 id="name"
                                 name="name"
                                 placeholder={currentBox?.name}
@@ -50,28 +51,17 @@ const BoxEdit = ({boxes, updateBox, current_user}) => {
                                 value={editBox.name}
                             />
                         </FormGroup>
+                       
                     </Col>
-                    <Col md={4}>
+                </Row>
+                <Row>              
+                    <Col md={5}>
                         <FormGroup>
-                            <Label for="size">
-                                Size
+                            <Label className="label-font" for="contents">
+                                Contains
                             </Label>
-                            <Input
-                                id="size"
-                                name="size"
-                                placeholder={currentBox?.size}
-                                type="text"
-                                onChange={handleChange}
-                                value={editBox.size}
-                            />
-                        </FormGroup>
-                    </Col>              
-                    <Col md={2}>
-                        <FormGroup>
-                            <Label for="contents">
-                                Contents
-                            </Label>
-                            <Input
+                            <Input className="form-size"
+                                type="textarea"
                                 id="contents"
                                 name="contents"
                                 placeholder={currentBox?.contents}
@@ -82,8 +72,26 @@ const BoxEdit = ({boxes, updateBox, current_user}) => {
                         </FormGroup>
                     </Col>
                 </Row>
+                <Row>
+                    <Col md={2}>
+                        <FormGroup>
+                            <Label className="label-font" for="size">
+                                Box Size
+                            </Label>
+                            <Input style={{borderRadius: "1px",borderColor: "white"}}
+                                id="size"
+                                name="size"
+                                placeholder={currentBox?.size}
+                                type="text"
+                                onChange={handleChange}
+                                value={editBox.size}
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
             </Form>
-            <Button onClick={handleSubmit}>
+            </div>
+            <Button className="update-button-styling"  onClick={handleSubmit}>
                 Update Your Box
             </Button>
                 

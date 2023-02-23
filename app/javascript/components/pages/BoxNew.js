@@ -29,61 +29,66 @@ const handleSubmit = () => {
 }
 
 return (
-    <>
-    
-        <h3>Make Your Box</h3>
-        <Form>
-        <Row>
-        <Col md={5}>
-        <FormGroup>
-          <Label for="name">
-          Name
-          </Label>
-          <Input
-          id="name"
-          name="name"
-          type="text"
-          onChange={handleChange}
-          value={newBox.name}
-          />
-        </FormGroup>
-            </Col>
-            <Col md={4}>
-            <FormGroup>
-                <Label for="size">
-                Size
-                </Label>
-                <Input
-                id="size"
-                name="size"
-                type="text"
-                onChange={handleChange}
-                value={newBox.size}
-                />
-            </FormGroup>
-            </Col>
+        <>
         
-        <Col md={2}>
-            <FormGroup>
-            <Label for="contents">
-            Contents
-            </Label>
-            <Input
-            id="contents"
-            name="contents"
-            text="text"
-            onChange={handleChange}
-            value={newBox.contents}
-            />
-            </FormGroup>
-        </Col>
-        </Row>
-        </Form>
-        <Button onClick={handleSubmit}>
-        Create Your Box
-        </Button>
-            
-    </>
-)
+            <h1 className="your-box-styling">Make Your Box</h1>
+            <div className="index-bg-color form-padding about-us-info"> 
+            <Form>
+                <Row>
+                    <Col md={3}>
+                        <FormGroup>
+                            <Label className="label-font" for="name">
+                                Name
+                            </Label>
+                            <Input style={{borderRadius: "1px",borderColor: "white"}}
+                                id="name"
+                                name="name"
+                                type="text"
+                                onChange={handleChange}
+                                value={newBox.name}
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={5}>
+                        <FormGroup>
+                            <Label className="label-font" for="contents">
+                            Contains
+                            </Label>
+                            <Input className="form-size"
+                                id="contents"
+                                name="contents"
+                                text="text"
+                                onChange={handleChange}
+                                value={newBox.contents}
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={2}>
+                        <FormGroup>
+                            <Label className="label-font" for="size">
+                                Box Size
+                            </Label>
+                            <Input style={{borderRadius: "1px",borderColor: "white"}}
+                                id="size"
+                                name="size"
+                                type="text"
+                                onChange={handleChange}
+                                value={newBox.size}
+                            />
+                        </FormGroup>
+                    </Col>
+                </Row>
+            </Form>
+            </div>
+            <Button className="update-button-styling" onClick={handleSubmit}>
+            Create Your Box
+            </Button>
+                
+        </>
+    )
 }
 export default BoxNew;

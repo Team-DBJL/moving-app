@@ -25,9 +25,9 @@ a:hover {
 }
 
 .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
+    right: 0;
 }
 
 .container-fluid {
@@ -210,4 +210,44 @@ a:hover {
 
 .card-photo {
     border-radius: 50%;
+}
+
+.image-cropper {
+    width: 275px;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.login-box-styling {
+    background-color: #EFE5DA;
+    margin: 100px 450px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+.input-styling input {
+    width: 100%;
+}
+
+.login-email-styling {
+    text-align: left;
+    margin-top: 20px;
+    color: #C8A67E;
+    font-family: 'Roboto'; @import url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+.login-button-styling {
+    margin: 70px 50px;
+}
+
+.rememberme-styling {
+    text-align: left;
+    color: #C8A67E;}
+
+.login-title {
+    color: #AF906B;
+    font-family: 'Lato'; @import url('https://fonts.googleapis.com/css?family=Lato');
+    font-weight: bolder;
 }

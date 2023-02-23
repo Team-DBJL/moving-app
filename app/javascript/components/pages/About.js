@@ -25,7 +25,7 @@ const About = () => {
                 <Card
                 className="card"
                 >
-                <img className="card-photo"
+                <img className="card-photo image-cropper"
                 alt="Photo of Dom"
                 src={dom}
                 />
@@ -46,7 +46,7 @@ const About = () => {
                 </Card>
                 
                 <Card className="card">
-                <img className="card-photo"
+                <img className="card-photo image-cropper"
                 alt="Photo of Bora"
                 src={bora}
                 />
@@ -69,7 +69,7 @@ const About = () => {
 
             <div className="two-card-div">
                 <Card className="card">
-                <img className="card-photo"
+                <img className="card-photo image-cropper"
                 alt="Photo of James"
                 src={james}
                 />
@@ -90,7 +90,7 @@ const About = () => {
                 </Card>
                 
                 <Card className="card">
-                <img className="card-photo"
+                <img className="card-photo image-cropper"
                 alt="Photo of Lea"
                 src={lea}
                 />

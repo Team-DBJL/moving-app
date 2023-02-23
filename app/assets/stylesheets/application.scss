@@ -244,10 +244,61 @@ a:hover {
 
 .rememberme-styling {
     text-align: left;
-    color: #C8A67E;}
+    color: #C8A67E;
+}
 
 .login-title {
     color: #AF906B;
     font-family: 'Lato'; @import url('https://fonts.googleapis.com/css?family=Lato');
     font-weight: bolder;
+}
+
+.signup-box-styling {
+    background-color: #EFE5DA;
+    margin: 50px 450px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.signup-title {
+    color: #AF906B;
+    font-family: 'Lato'; @import url('https://fonts.googleapis.com/css?family=Lato');
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.signup-input-styling input {
+    width: 100%;
+}
+
+.signup-email-styling {
+    text-align: left;
+    margin-top: 20px;
+    color: #C8A67E;
+    font-family: 'Roboto'; @import url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+.password-confirmation-styling1 {
+    text-align: left;
+    color: #C8A67E;
+    margin-top: 40px;
+}
+
+.password-confirmation-styling2 {
+    text-align: left;
+    color: #C8A67E;
+    margin-top: 20px;
+}
+
+.signup-button-styling {
+    margin: 40px 50px;
+}
+
+.signup-logo {
+    width: 225px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }

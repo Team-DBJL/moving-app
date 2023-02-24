@@ -32,6 +32,8 @@ a:hover {
     bottom: 0;
     width: 100%;
     right: 0;
+    left: 0;
+    position: fixed;
 }
 
 .container-fluid {
@@ -214,15 +216,12 @@ a:hover {
 .card {
     width: 20rem;
     border: 0;
-}
-
-.card-photo {
-    border-radius: 50%;
+    
 }
 
 .image-cropper {
-    width: 275px;
-    height: 275px;
+    width: 325px;
+    height: 325px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -320,4 +319,31 @@ a:hover {
 
 .btn-secondary {
     border-color: white;
+}
+
+.update-button-styling {
+    float: right;
+    border-radius: 2px;
+    margin-right: 25px;
+}
+
+.form-padding {
+    padding: 25px 30px;
+
+}
+
+.form-size {
+    height: 100px;
+    border-radius: 1px;
+    border-color: white;
+}
+
+.label-font {
+    font-size: 20px;
+}
+
+.show-page-border {
+    border: solid white;
+    border-radius: 1px;
+    background-color: white;
 }

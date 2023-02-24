@@ -48,6 +48,6 @@ To run this app locally on your computer:
 ### Contributors:
 Team DBJL
 - **D**ominique Travis (Tech Lead) - [LinkedIn](https://www.linkedin.com/in/dominque-travis/) | [GitHub](https://github.com/djx-ctrl)
-- **B**ora Ros (Product Manager) - [LinkedIn](www.linkedin.com/in/bora-ros) | [GitHub](github.com/bnros)
-- **J**ames Quillen (Project Manager) - [LinkedIn](https://www.linkedin.com/in/jamesquillen/) | [GitHub](github.com/jamesquillen)
-- **L**ea Hazel (Design Lead) - [LinkedIn]https://www.linkedin.com/in/lea-hazel-452404203/) | [GitHub](https://github.com/lmhazel)
+- **B**ora Ros (Product Manager) - [LinkedIn](https://www.linkedin.com/in/bora-ros) | [GitHub](https://github.com/bnros)
+- **J**ames Quillen (Project Manager) - [LinkedIn](https://www.linkedin.com/in/jamesquillen/) | [GitHub](https://github.com/jamesquillen)
+- **L**ea Hazel (Design Lead) - [LinkedIn](https://www.linkedin.com/in/lea-hazel-452404203/) | [GitHub](https://github.com/lmhazel)

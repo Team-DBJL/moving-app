@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+body {
+    height: 82vh;
+}
+
 .header-background {
     background: url('https://media.istockphoto.com/id/578556350/photo/brown-paper-background.jpg?s=612x612&w=0&k=20&c=shGY1WoScBLeFqpV-NLmGJVjox9fuja7U6EdtvwQsk0=');
 }
@@ -28,6 +32,8 @@ a:hover {
     bottom: 0;
     width: 100%;
     right: 0;
+    left: 0;
+    position: fixed;
 }
 
 .container-fluid {
@@ -78,7 +84,7 @@ a:hover {
     text-align: center;
     font-family: 'Courgette', sans-serif;
     @import url('https://fonts.googleapis.com/css?family=Courgette');
-    padding-top: 12px;
+    padding-top: 100px;
 }
 
 .company-name {
@@ -95,6 +101,10 @@ a:hover {
     text-align: center;
     padding-bottom: 12px;
     font-family: 'Lato', sans-serif;
+    width: 50%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home-buttons-space {
@@ -206,15 +216,12 @@ a:hover {
 .card {
     width: 20rem;
     border: 0;
-}
-
-.card-photo {
-    border-radius: 50%;
+    
 }
 
 .image-cropper {
-    width: 275px;
-    height: 275px;
+    width: 325px;
+    height: 325px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -244,12 +251,74 @@ a:hover {
 
 .rememberme-styling {
     text-align: left;
-    color: #C8A67E;}
+    color: #C8A67E;
+}
 
 .login-title {
     color: #AF906B;
     font-family: 'Lato'; @import url('https://fonts.googleapis.com/css?family=Lato');
     font-weight: bolder;
+}
+
+.signup-box-styling {
+    background-color: #EFE5DA;
+    margin: 50px 450px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.signup-title {
+    color: #AF906B;
+    font-family: 'Lato'; @import url('https://fonts.googleapis.com/css?family=Lato');
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.signup-input-styling input {
+    width: 100%;
+}
+
+.signup-email-styling {
+    text-align: left;
+    margin-top: 20px;
+    color: #C8A67E;
+    font-family: 'Roboto'; @import url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+.password-confirmation-styling1 {
+    text-align: left;
+    color: #C8A67E;
+    margin-top: 40px;
+}
+
+.password-confirmation-styling2 {
+    text-align: left;
+    color: #C8A67E;
+    margin-top: 20px;
+}
+
+.signup-button-styling {
+    margin: 40px 50px;
+}
+
+.signup-logo {
+    width: 225px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.homepage-background {
+    background-image: url('https://media.istockphoto.com/id/578556350/photo/brown-paper-background.jpg?s=612x612&w=0&k=20&c=shGY1WoScBLeFqpV-NLmGJVjox9fuja7U6EdtvwQsk0=');
+    height: 82vh;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.btn-secondary {
+    border-color: white;
 }
 
 .update-button-styling {
@@ -278,4 +347,3 @@ a:hover {
     border-radius: 1px;
     background-color: white;
 }
-

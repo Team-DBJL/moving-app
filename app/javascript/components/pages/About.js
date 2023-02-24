@@ -13,10 +13,10 @@ const About = () => {
                 <p className="about-us-title">About Us</p>
                 <p className="about-us-info">Nobody enjoys moving.</p>
                 <p className="about-us-info">
-                    After the stress of a major move, the last thing anyone wants to do is blindly sort through their moving boxes struggling to find the item they need right that moment. With Pack Rat, finding your stuff is easy. Create virtual boxes and list their contents. When it’s time to find that item you need, just search your virtual boxes to find out where it is in the real world.
+                    After the stress of a major move, the last thing anyone wants to do is blindly sort through their moving boxes struggling to find the item they need right that moment. With PackRat, finding your stuff is easy. Create virtual boxes and list their contents. When it’s time to find that item you need, just search your virtual boxes to find out where it is in the real world.
                 </p>
                 <p className="about-us-info">
-                    Don’t get bitten by your move. Use Pack Rat.
+                    Don’t get bitten by your move. Use PackRat.
                 </p>
                 <p></p>
             </div>
@@ -25,7 +25,7 @@ const About = () => {
                 <Card
                 className="card"
                 >
-                <img className="card-photo image-cropper"
+                <img className="image-cropper"
                 alt="Photo of Dom"
                 src={dom}
                 />
@@ -46,13 +46,13 @@ const About = () => {
                 </Card>
                 
                 <Card className="card">
-                <img className="card-photo image-cropper"
+                <img className="image-cropper"
                 alt="Photo of Bora"
                 src={bora}
                 />
                 <CardBody>
                 <CardTitle tag="h5" className="card-title-text">
-                    Bora Ross
+                    Bora Ros
                 </CardTitle>
                 <CardSubtitle
                     className="mb-2 text-muted card-title-text"
@@ -69,7 +69,7 @@ const About = () => {
 
             <div className="two-card-div">
                 <Card className="card">
-                <img className="card-photo image-cropper"
+                <img className="image-cropper"
                 alt="Photo of James"
                 src={james}
                 />
@@ -90,7 +90,7 @@ const About = () => {
                 </Card>
                 
                 <Card className="card">
-                <img className="card-photo image-cropper"
+                <img className="image-cropper"
                 alt="Photo of Lea"
                 src={lea}
                 />

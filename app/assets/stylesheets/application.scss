@@ -32,6 +32,8 @@ a:hover {
     bottom: 0;
     width: 100%;
     right: 0;
+    left: 0;
+    position: fixed;
 }
 
 .container-fluid {
@@ -210,15 +212,12 @@ a:hover {
 .card {
     width: 20rem;
     border: 0;
-}
-
-.card-photo {
-    border-radius: 50%;
+    
 }
 
 .image-cropper {
-    width: 275px;
-    height: 275px;
+    width: 325px;
+    height: 325px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;

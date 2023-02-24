@@ -82,7 +82,7 @@ a:hover {
     text-align: center;
     font-family: 'Courgette', sans-serif;
     @import url('https://fonts.googleapis.com/css?family=Courgette');
-    padding-top: 12px;
+    padding-top: 100px;
 }
 
 .company-name {
@@ -99,6 +99,10 @@ a:hover {
     text-align: center;
     padding-bottom: 12px;
     font-family: 'Lato', sans-serif;
+    width: 50%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home-buttons-space {
@@ -311,4 +315,9 @@ a:hover {
     background-image: url('https://media.istockphoto.com/id/578556350/photo/brown-paper-background.jpg?s=612x612&w=0&k=20&c=shGY1WoScBLeFqpV-NLmGJVjox9fuja7U6EdtvwQsk0=');
     height: 82vh;
     background-size: cover;
+    border-radius: 0;
+}
+
+.btn-secondary {
+    border-color: white;
 }

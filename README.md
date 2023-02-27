@@ -3,7 +3,7 @@
 ## Overview:
 **Packrat**, is a moving app that was created by Team DBJL using a monothilic application React in Rails. Affectionately known as Team Double Jello, Team DBJL was founded by four members of LEARN Academy's Hotel 2022 cohort. The name was created by coining together the first initial of every team member's name; the "**D**" stands for Dominique (Dom), "**B**" is for Bora (Bo), "**J**" is for James, and "**L**" is for Lea, respectively. The idea for this app came after one of our team members had struggled recently with a difficult move, and wondered what could've made the transition to their new home easier. Thus, PackRat was born! Additionally, this app was created as a graduation requirement for capstone, as apart of LEARN Academy's web development curriculum.
 
-**LIVE LINK**: <insert-link-here>
+**LIVE LINK**: [https://moving-app.onrender.com/](https://moving-app.onrender.com/)
 
 **APP PREVIEW**:
 ![PackRat Application Screenshot](app/assets/images/App-screenshot.png "PackRat Homepage")
@@ -13,7 +13,7 @@ With PackRat, finding your stuff is easy. Create virtual boxes and list their co
 
 With PackRat at your side, you will be able to:
 - Sign up for your own personal account (for free!)
-- Create new boxes with a name to denote what room its for, the contents inside, and selecting a box size
+- Create new boxes with a name to denote what room it is for, the contents inside, and selecting a box size
 - Edit existing boxes if you've made a mistake
 - Delete boxes once you've unpacked that box
 
